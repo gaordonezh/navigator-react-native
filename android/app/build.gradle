@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.napcolaboradores"
+    namespace "com.navigator"
     defaultConfig {
-        applicationId "com.napcolaboradores"
+        applicationId "com.navigator"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2

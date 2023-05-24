@@ -1,4 +1,4 @@
-package com.napcolaboradores;
+package com.navigator;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
