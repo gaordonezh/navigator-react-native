@@ -1,8 +1,8 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import IonicIcon from 'react-native-vector-icons/Ionicons';
-import {MAIN_COLOR} from '../utils/constans';
+import { MAIN_COLOR } from '../utils/constans';
 import HomeStack from './stack/HomeStack';
 import SettingsStack from './stack/SettingsStack';
 
@@ -20,21 +20,17 @@ const ScreensTab = () => {
         component={HomeStack}
         options={{
           tabBarLabel: 'Home',
-          tabBarIcon: ({color, size}) => (
-            <IonicIcon name="home" color={color} size={size} />
-          ),
+          tabBarIcon: ({ color, size }) => <IonicIcon name="home" color={color} size={size} />,
           tabBarBadge: 5,
           headerShown: false,
         }}
       />
       <Tab.Screen
-        name="SettingsScreen"
+        name="Settings"
         component={SettingsStack}
         options={{
           tabBarLabel: 'Settings',
-          tabBarIcon: ({color, size}) => (
-            <IonicIcon name="settings" color={color} size={size} />
-          ),
+          tabBarIcon: ({ color, size }) => <IonicIcon name="settings" color={color} size={size} />,
           headerShown: false,
         }}
       />

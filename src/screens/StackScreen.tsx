@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react';
-import {View, Text} from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Text } from 'react-native';
+import styles from '../theme';
 
 const StackScreen = () => {
   useEffect(() => {
@@ -7,7 +8,7 @@ const StackScreen = () => {
   }, []);
 
   return (
-    <View>
+    <View style={styles.centered}>
       <Text>STACK SCREEN</Text>
     </View>
   );

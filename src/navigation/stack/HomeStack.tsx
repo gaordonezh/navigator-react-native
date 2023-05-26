@@ -1,22 +1,23 @@
 import React from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import StackScreen from '../../screens/StackScreen';
 import HomeScreen from '../../screens/HomeScreen';
+import { ScreenNamesEnum } from '../../interfaces/enums';
 
 const HomeStackNavigator = createNativeStackNavigator();
 
 const HomeStack = () => {
   return (
-    <HomeStackNavigator.Navigator initialRouteName="HomeScreen">
+    <HomeStackNavigator.Navigator initialRouteName={ScreenNamesEnum.HOME_SCREEN}>
       <HomeStackNavigator.Screen
-        name="HomeScreen"
+        name={ScreenNamesEnum.HOME_SCREEN}
         component={HomeScreen}
-        options={{headerTitle: 'Home'}}
+        options={{ headerTitle: 'Home' }}
       />
       <HomeStackNavigator.Screen
-        name="StackScreen"
+        name={ScreenNamesEnum.STACK_SCREEN}
         component={StackScreen}
-        options={{headerTitle: 'Stack'}}
+        options={{ headerTitle: 'Stack' }}
       />
     </HomeStackNavigator.Navigator>
   );
