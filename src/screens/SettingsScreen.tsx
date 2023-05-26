@@ -3,22 +3,23 @@ import {View, Text} from 'react-native';
 import Button from '../components/Button';
 import useNavigate from '../hooks/useNavigate';
 
-const HomeScreen = () => {
+const SettingsScreen = () => {
   const {navigate} = useNavigate();
 
   useEffect(() => {
-    console.log('render home screen');
+    console.log('render settings screen');
   }, []);
 
   return (
     <View>
-      <Text>HOME SCREEN</Text>
+      <Text>SETTINGS SCREEN</Text>
+
       <Button
-        label="GO TO SECOND VIEW"
-        onPress={() => navigate('StackScreen')}
+        label="GO TO PROFILE VIEW"
+        onPress={() => navigate('ProfileScreen')}
       />
     </View>
   );
 };
 
-export default HomeScreen;
+export default SettingsScreen;

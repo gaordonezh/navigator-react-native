@@ -1,16 +1,16 @@
 import React, {useEffect} from 'react';
 import {View, Text} from 'react-native';
 
-const StackScreen = () => {
+const ProfileScreen = () => {
   useEffect(() => {
-    console.log('render stack screen');
+    console.log('render profile screen');
   }, []);
 
   return (
     <View>
-      <Text>STACK SCREEN</Text>
+      <Text>PROFILE SCREEN</Text>
     </View>
   );
 };
 
-export default StackScreen;
+export default ProfileScreen;
